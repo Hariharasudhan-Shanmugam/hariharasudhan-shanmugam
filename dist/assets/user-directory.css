@@ -1,0 +1,107 @@
+
+.individual-pic {
+    display: inline-flex;
+    margin-left: 350px;
+}
+
+.back-button{
+width: 60px;
+height: 28px;
+background: darkgray;
+margin-left: 350px;
+margin-top: auto;
+}
+
+.card-layout{
+width: 10em;
+margin: 65px;
+border: 2px solid grey;
+padding: 15px;
+}
+
+.user-photo{
+   padding: 2.5em;
+ }
+
+ .loader {
+   border: 16px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 16px solid #3498db;
+   width: 120px;
+   height: 120px;
+   -webkit-animation: spin 2s linear infinite; /* Safari */
+   animation: spin 2s linear infinite;
+ }
+
+ /* Safari */
+ @-webkit-keyframes spin {
+   0% { -webkit-transform: rotate(0deg); }
+   100% { -webkit-transform: rotate(360deg); }
+ }
+
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+
+.card-columns.card-count {
+	column-count: 3;
+}
+
+
+.short-listed {
+	border: 2px solid darkgrey;
+    background: darkgray;
+}
+
+.parent-card {
+    overflow: scroll;
+}
+
+.searchbox {
+    width: 50%;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+.add-button{
+  border: 1px solid black;
+}
+
+table {
+  margin: auto;
+ border: 1px solid darkgray;
+    background: lightgrey;
+}
+tr {
+  border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgrey;
+}
+td {
+      border: 1px solid darkgrey;
+}
+
+hr {
+  width; 50%
+}
+
+footer {
+  margin-top: 20px
+}
+
+.footer-text{
+text-align: center;
+}
+
+.FRC {
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: -webkit-fill-available;
+  height: 20px;
+  border: 1px solid grey;
+}
+input[type="text"].FRC:hover{
+  border: 1px solid blue;
+  color: blue;
+}

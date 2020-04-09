@@ -1,0 +1,37 @@
+{{outlet}}
+<!-- {{loading-slider isLoading=loading duration=250}} -->
+{{file-upload data=data marketPlaceList=marketPlaceList}}
+
+<div style="display:grid">
+    <label>MARKET PLACE:</label>
+  <select id="marketplaceselect" onchange={{action "onSelectMarketPlace" value="target.value"}} >
+    {{#each marketPlaceList as |marketPlaceList|}}
+    <option id="marketPlace" value={{marketPlaceList}}>{{marketPlaceList}}</option>
+    {{/each}}
+  </select>
+  <label>GL:</label>
+  <select id="glselect" onchange={{action "onSelectGL" value="target.value"}}>
+    {{#each filterGL as |filterGL|}}
+      <option id={{filterGL}} value={{filterGL}}>{{filterGL}}</option>
+    {{/each}}
+  </select>
+
+</div>
+<div style="display:grid">
+<div>
+  <label>FIRST RESPONSE CONTACT:</label>
+  <input id="FRC" class="FRC" value={{firstResponseContact}} type="text" onclick={{action "copy" "FRC"}}>
+</div>
+<div>
+  <label>ESCALATION POINT 1:</label>
+  <input  id="EP1" class="EP1" value={{escalation1}} type="text" onclick={{action "copy" "EP1"}}>
+</div>
+<div>
+  <label>ESCALATION POINT 2:</label>
+  <input  id="EP2" class="EP2" value={{escalation2}} type="text" onclick={{action "copy" "EP2"}}>
+</div>
+<div>
+  <label>INPUT PROVIDED BY:</label>
+  <input  id="IP" class="IP" value={{inputProvider}} type="text" onclick={{action "copy" "IP"}}>
+ </div>
+</div>
